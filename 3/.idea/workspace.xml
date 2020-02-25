@@ -24,7 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.perceplearn3">
+  <component name="RunManager" selected="Python.percepclassify3">
     <configuration name="percepclassify3" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -38,7 +38,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/percepclassify3.py" />
-      <option name="PARAMETERS" value="./op_spam_training_data" />
+      <option name="PARAMETERS" value="./vanillamodel.txt ./op_spam_training_data" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -99,37 +99,50 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="428" y="67" key="#percepclassify3" timestamp="1582412508637">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state x="578" y="154" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1582589496947">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state x="578" y="154" key="#com.intellij.ide.macro.MacrosDialog/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582589496947" />
+    <state x="532" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582592808647">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state x="532" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582592808647" />
+    <state x="499" y="75" key="#percepclassify3" timestamp="1582594179313">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="428" y="67" key="#percepclassify3/0.23.1440.826@0.23.1440.826" timestamp="1582412508637" />
+    <state x="499" y="75" key="#percepclassify3/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582594179313" />
     <state x="428" y="67" key="#perceplearn3" timestamp="1582412569735">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="428" y="67" key="#perceplearn3/0.23.1440.826@0.23.1440.826" timestamp="1582412569735" />
-    <state width="1568" height="299" key="GridCell.Tab.0.bottom" timestamp="1582586069594">
+    <state width="1568" height="230" key="GridCell.Tab.0.bottom" timestamp="1582600974287">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1417" height="212" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1582412626042" />
     <state width="1568" height="299" key="GridCell.Tab.0.bottom/0.23.1680.967/-1920.109.1920.1057@0.23.1680.967" timestamp="1582575059379" />
-    <state width="1568" height="299" key="GridCell.Tab.0.bottom/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582586069594" />
-    <state width="1568" height="299" key="GridCell.Tab.0.center" timestamp="1582586069593">
+    <state width="1568" height="230" key="GridCell.Tab.0.bottom/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582600974287" />
+    <state width="1568" height="230" key="GridCell.Tab.0.center" timestamp="1582600974285">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1417" height="212" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1582412626041" />
     <state width="1568" height="299" key="GridCell.Tab.0.center/0.23.1680.967/-1920.109.1920.1057@0.23.1680.967" timestamp="1582575059378" />
-    <state width="1568" height="299" key="GridCell.Tab.0.center/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582586069593" />
-    <state width="1568" height="299" key="GridCell.Tab.0.left" timestamp="1582586069592">
+    <state width="1568" height="230" key="GridCell.Tab.0.center/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582600974285" />
+    <state width="1568" height="230" key="GridCell.Tab.0.left" timestamp="1582600974285">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1417" height="212" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1582412626040" />
     <state width="1568" height="299" key="GridCell.Tab.0.left/0.23.1680.967/-1920.109.1920.1057@0.23.1680.967" timestamp="1582575059377" />
-    <state width="1568" height="299" key="GridCell.Tab.0.left/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582586069592" />
-    <state width="1568" height="299" key="GridCell.Tab.0.right" timestamp="1582586069594">
+    <state width="1568" height="230" key="GridCell.Tab.0.left/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582600974285" />
+    <state width="1568" height="230" key="GridCell.Tab.0.right" timestamp="1582600974286">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1417" height="212" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1582412626041" />
     <state width="1568" height="299" key="GridCell.Tab.0.right/0.23.1680.967/-1920.109.1920.1057@0.23.1680.967" timestamp="1582575059378" />
-    <state width="1568" height="299" key="GridCell.Tab.0.right/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582586069594" />
+    <state width="1568" height="230" key="GridCell.Tab.0.right/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582600974286" />
+    <state x="458" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1582588485989">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state x="458" y="237" width="672" height="678" key="search.everywhere.popup/0.23.1680.972/-1920.109.1920.1057@0.23.1680.972" timestamp="1582588485989" />
   </component>
 </project>

@@ -4,7 +4,10 @@
     <list default="true" id="9a457c7f-fd40-4e4c-a807-0f28c4099392" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3/averagedmodel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../3/averagedmodel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3/percepclassify3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../3/percepclassify3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../3/perceplearn3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../3/perceplearn3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3/vanillamodel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../3/vanillamodel.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
