@@ -1,6 +1,9 @@
 #ignore dir hw and reading
 **/hw
 **/reading
+**/lecture
+
+*.pdf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
