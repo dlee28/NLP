@@ -2,8 +2,15 @@
 **/hw
 **/reading
 **/lecture
+**/research
+**/.idea
 
+*.DS_Store
 *.pdf
+*.xml
+
+.DS_Store
+.idea
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
