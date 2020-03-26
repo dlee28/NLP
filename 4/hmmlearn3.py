@@ -8,3 +8,4 @@ if __name__ == '__main__':
 
     # RNN code starts here.
     print('Starting to train RNN')
+    print('Done Training RNN')
