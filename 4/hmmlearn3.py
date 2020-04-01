@@ -1,4 +1,4 @@
-import sys, os
+import sys, os, json
 from collections import defaultdict
 
 training_words = defaultdict(float) #Key: word from training data Value: count of the word
@@ -36,6 +36,25 @@ def read_training_data(input_path):
                     transition[previous] += 1
 
 
+def check_dic(model1, model2):
+    count = 0
+    print('len model1: ' , len(model1.keys()))
+    print('len model2: ' , len(model2.keys()))
+    for i in model2.keys():
+        if i not in model1.keys():
+            print('Not in model1:', i)
+    for k, i in model1.items():
+        if model2[k] != i:
+            print('Model1: ' + k, i)
+            print('Model2: ' + k, model2[k])
+            count += 1
+
+            # for foo, z in i.items():
+            #     if model2[k][foo] == z:
+            #         print('Inner Model1: ' + foo, z)
+            #         print('Inner Model2: ' + foo, model2[k][foo])
+    print('number of difference: ', count)
+
 if __name__ == '__main__':
     print('Starting main ...')
 
@@ -45,16 +64,41 @@ if __name__ == '__main__':
     # read training data
     read_training_data(input_path)
 
-    # compute emmission prob for all tags
+    # compute emission prob for all tags
     for tag in tag_count.keys():
         for word, count in tag_word[tag].items():
             # count of word/tag divided by total count of tag
             emission_prob[tag][word] = count / tag_count[tag]
 
     # compute transition prob
-    # for tag in tag_tag.keys():
-    #     for after_tag in tag_tag.keys():
+    for tag_1 in tag_tag.keys():
+        for tag_2 in tag_tag.keys():
+            if tag_2 == 'START':
+                continue
+            transition_prob[tag_1][tag_2] = (tag_tag[tag_1][tag_2] + 1.0) / (transition[tag_1])
 
+    #wrtie to hmmmodel.txt
+    with open('hmmmodel.txt', 'w', encoding='utf-8') as f:
+        json.dump(training_words, f)
+        f.write('\n')
+        json.dump(tag_count, f)
+        f.write('\n')
+        json.dump(emission_prob, f)
+        f.write('\n')
+        json.dump(transition_prob, f)
 
+    with open('hmmmodel_test.txt', 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+        training_words_test = json.loads(lines[0])
+        transition_prob_test = json.loads(lines[1])
+        emission_prob_test = json.loads(lines[2])
+        tag_count_test = json.loads(lines[3])
 
+    with open('hmmmodel.txt', 'r', encoding='utf-8') as f1:
+        lines = f1.readlines()
+        training_words = json.loads(lines[0])
+        tag_count = json.loads(lines[1])
+        emission_prob = json.loads(lines[2])
+        transition_prob = json.loads(lines[3])
 
+    check_dic(transition_prob, transition_prob_test)
