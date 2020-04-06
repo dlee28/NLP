@@ -36,17 +36,17 @@ def read_training_data(input_path):
                     transition[previous] += 1
 
 
-def check_dic(model1, model2):
+def check_dic(dic1, dic2):
     count = 0
-    print('len model1: ' , len(model1.keys()))
-    print('len model2: ' , len(model2.keys()))
-    for i in model2.keys():
-        if i not in model1.keys():
-            print('Not in model1:', i)
-    for k, i in model1.items():
-        if model2[k] != i:
-            print('Model1: ' + k, i)
-            print('Model2: ' + k, model2[k])
+    print('len dic1: ' , len(dic1.keys()))
+    print('len model2: ' , len(dic2.keys()))
+    for i in dic2.keys():
+        if i not in dic1.keys():
+            print('Not in dic1:', i)
+    for k, i in dic1.items():
+        if dic2[k] != i:
+            print('dic1: ' + k, i)
+            print('Model2: ' + k, dic2[k])
             count += 1
 
             # for foo, z in i.items():
@@ -100,5 +100,3 @@ if __name__ == '__main__':
         tag_count = json.loads(lines[1])
         emission_prob = json.loads(lines[2])
         transition_prob = json.loads(lines[3])
-
-    check_dic(transition_prob, transition_prob_test)
