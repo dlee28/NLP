@@ -56,7 +56,7 @@ def check_dic(dic1, dic2):
     print('number of difference: ', count)
 
 if __name__ == '__main__':
-    print('Starting main ...')
+    print('hmmlearn starting main ...')
 
     # path to a single file with training data
     input_path = sys.argv[1]
@@ -86,13 +86,6 @@ if __name__ == '__main__':
         json.dump(emission_prob, f)
         f.write('\n')
         json.dump(transition_prob, f)
-
-    with open('hmmmodel_test.txt', 'r', encoding='utf-8') as f:
-        lines = f.readlines()
-        training_words_test = json.loads(lines[0])
-        transition_prob_test = json.loads(lines[1])
-        emission_prob_test = json.loads(lines[2])
-        tag_count_test = json.loads(lines[3])
 
     with open('hmmmodel.txt', 'r', encoding='utf-8') as f1:
         lines = f1.readlines()
